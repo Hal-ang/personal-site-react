@@ -1,13 +1,109 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#default-background {
+  /* background-color: #566270; */
+  background-color: #f7f7f7;
+  height: 900px;
+}
+
+#menu-container {
+  position: absolute;
+  left: 3%;
+  top: 3%;
+}
+
+#menu-btn {
+  background-color: #f7f7f7;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  border: 0;
+}
+
+#menu-btn:hover {
+  background-color: #e0e3da;
+}
+/* ul */
+#menu-lists {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* li */
+.menu-item {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-item:hover {
+  background-color: #e0e3da;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+
+#home-introduce {
+  color: black;
+  width: 1000px;
+  font-weight: 900;
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -25%;
+}
+
+#home-introduce p {
+  text-align: center;
+  margin: 10px;
+}
+
+#footer {
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  margin-left: -2%;
+}
+
+#footer img {
+  width: 40px;
+  border-radius: 4px;
+}
+
+#github-img {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+#tstory-img {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+.next-page-btn {
+  position: absolute;
+  right: 1%;
+  width: 100px;
+  top: 50%;
+  margin-top: -6%;
+}
+
+.next-page-btn img {
+  width: 100px;
 }

@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Menu from "./Menu";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams,
+} from "react-router-dom";
+import Footer from "./Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  // handleClickMenu() {
+  //   // 메뉴 버튼 누르면 숨겨놨던 메뉴 리스트가 노출된다
+  // }
+
+  render() {
+    return (
+      <Router>
+        <div id="default-background">
+          <Menu />
+          <Footer />
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
