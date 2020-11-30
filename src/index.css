@@ -15,7 +15,7 @@ code {
 #default-background {
   /* background-color: #566270; */
   background-color: #f7f7f7;
-  height: 900px;
+  height: 1000px;
 }
 
 #menu-container {
@@ -59,7 +59,7 @@ code {
 
 #home-introduce {
   color: black;
-  width: 1000px;
+  width: 950px;
   font-weight: 900;
   font-size: 40px;
   position: absolute;
@@ -83,17 +83,18 @@ code {
 
 #footer img {
   width: 40px;
-  border-radius: 4px;
 }
 
 #github-img {
   margin-left: 0;
   margin-right: 15px;
+  border-radius: 4px;
 }
 
 #tstory-img {
   margin-left: 15px;
   margin-right: 0;
+  border-radius: 100%;
 }
 
 .next-page-btn {
@@ -106,4 +107,53 @@ code {
 
 .next-page-btn img {
   width: 100px;
+}
+
+.prev-page-btn {
+  position: absolute;
+  left: 1%;
+  width: 100px;
+  top: 50%;
+  margin-top: -6%;
+}
+
+.prev-page-btn img {
+  width: 100px;
+}
+
+/* about */
+#about-container {
+  display: inline-block;
+  position: absolute;
+  height: 250px;
+
+  top: 30%;
+  left: 25%;
+}
+
+#about-emoji {
+  width: 240px;
+
+  margin-right: 80px;
+  border-radius: 100%;
+  vertical-align: middle;
+  border-color: ;
+  border: solid 20px #e0e3da;
+}
+
+#about-emoji:hover {
+  /* border-color: #e0e3da;
+  border: solid 3px; */
+}
+
+#detail-introduce {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#detail-introduce p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

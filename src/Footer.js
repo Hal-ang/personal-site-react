@@ -4,16 +4,10 @@ const Footer = () => {
   return (
     <div id="footer">
       <a href="https://github.com/Hal-ang?tab=repositories">
-        <img
-          id="github-img"
-          src="https://www.freeiconspng.com/thumbs/github-logo-icon/github-logo-icon-25.jpg"
-        ></img>
+        <img id="github-img" src="/images/github-icon.jpg"></img>
       </a>
       <a href="https://deemmun.tistory.com/">
-        <img
-          id="tstory-img"
-          src="https://t1.daumcdn.net/cfile/tistory/99A631395C3448420F"
-        ></img>
+        <img id="tstory-img" src="/images/tstory.png"></img>
       </a>
     </div>
   );

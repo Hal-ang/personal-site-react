@@ -18,7 +18,7 @@ const Home = () => {
       </div>
       <div className="next-page-btn">
         <Link to="/about">
-          <img src="https://www.netclipart.com/pp/m/0-8811_arrow-clipart-printable-transparent-background-white-arrow-png.png"></img>
+          <img src="/images/next-arrow.png"></img>
         </Link>
       </div>
       <Switch>
