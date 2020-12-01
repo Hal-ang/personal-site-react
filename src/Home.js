@@ -21,6 +21,7 @@ class Home extends Component {
         <div className="next-page-btn">
           <Arrow nextPage={this.state.nextPage} />
         </div>
+
         <Switch>
           <Route path="/about">
             <About />
