@@ -1,16 +1,9 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <>
+    <div className="main-area">
       <div id="about-container">
         <img
           id="about-emoji"
@@ -36,7 +29,7 @@ const About = () => {
           <img src="/images/prev-arrow.jpeg"></img>
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

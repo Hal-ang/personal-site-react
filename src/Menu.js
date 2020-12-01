@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home";
@@ -18,6 +11,7 @@ class Menu extends Component {
     this.state = {
       showMenu: false,
     };
+
     this.handleClickMenu = this.handleClickMenu.bind(this);
     this.resetClickMenu = this.resetClickMenu.bind(this);
   }
@@ -57,19 +51,18 @@ class Menu extends Component {
             </ul>
           ) : null}
         </div>
-        <div id="switch-container">
-          <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </div>
+
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </>
     );
   }

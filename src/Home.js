@@ -11,7 +11,7 @@ import About from "./About";
 
 const Home = () => {
   return (
-    <div>
+    <div className="main-area">
       <div id="home-introduce">
         <p>안녕하세요</p>
         <p>풀스택 개발자를 꿈꾸는 예비 개발자입니다</p>
