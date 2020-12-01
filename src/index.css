@@ -190,7 +190,7 @@ code {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 #writing-email {
@@ -224,7 +224,7 @@ input::-webkit-input-placeholder {
 #detail-contact {
   margin-top: 60px;
   text-align: center;
-  color: #274c5e;
+  color: black;
   font-weight: bold;
   font-size: 20px;
 }
