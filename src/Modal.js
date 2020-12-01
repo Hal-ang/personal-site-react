@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 class Modal extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <>
@@ -18,7 +22,12 @@ class Modal extends Component {
                 alt="second-picture"
               ></img>
               <div id="modal-close-btn-div">
-                <button id="modal-close-btn">닫기</button>
+                <button
+                  id="modal-close-btn"
+                  onClick={this.props.handleClickEmoji}
+                >
+                  닫기
+                </button>
               </div>
             </div>
           </div>

@@ -11,15 +11,27 @@ class About extends Component {
       prevPage: "/",
       checked: false,
     };
+    this.handleClickEmoji = this.handleClickEmoji.bind(this);
+  }
+
+  handleClickEmoji() {
+    this.setState((prevState) => {
+      return {
+        checked: !prevState.checked,
+      };
+    });
   }
 
   render() {
     return (
       <>
-        <Modal />
+        {this.state.checked ? (
+          <Modal handleClickEmoji={this.handleClickEmoji} />
+        ) : null}
         <div className="main-area">
           <div id="about-container">
             <img
+              onClick={this.handleClickEmoji}
               id="about-emoji"
               src="/images/about-emoji.jpg"
               alt="about-emoji"
